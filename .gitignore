@@ -9,3 +9,6 @@ crash.log
 # Variable files (keep !*.tfvars.example)
 *.tfvars
 !*.tfvars.example
+
+# LocalStack local state
+localstack-data/
