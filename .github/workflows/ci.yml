@@ -1,13 +1,11 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
-      - 'feature/**'
   pull_request:
-    branches:
-      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
   workflow_dispatch:
 
 permissions:
