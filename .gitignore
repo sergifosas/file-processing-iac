@@ -1,0 +1,11 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+override.tf
+override.tf.json
+crash.log
+
+# Variable files (keep !*.tfvars.example)
+*.tfvars
+!*.tfvars.example

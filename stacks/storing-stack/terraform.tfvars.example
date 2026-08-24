@@ -1,0 +1,27 @@
+# ============================================================
+# Example terraform.tfvars for the storing-stack
+#
+# Usage: copy to "terraform.tfvars", fill in the values and run
+#   terraform plan
+# ============================================================
+
+# --- Required ---
+bucket_name = "file-processing-storage"
+
+# --- Provider / region ---
+region = "eu-west-1"
+
+# --- Configuration ---
+versioning_enabled = true
+
+# --- Tags (common) ---
+environment = "dev"
+cost_center = "cost-00001"
+project     = "FileProcessing"
+map-migrated = "d1234567890123456789"
+owner       = "platform-team"
+
+# --- Tags (extra, optional; overrides computed tags) ---
+tags = {
+  Team = "platform"
+}
