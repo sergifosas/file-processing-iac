@@ -6,12 +6,16 @@ IaC for the file-processing project.
 
 ```
 ├── modules/
-│   └── s3/
-│       ├── main.tf          S3 module (bucket + versioning + encryption + public access block)
+│   ├── s3/
+│   │   ├── main.tf          S3 module (bucket + versioning + encryption + public access block)
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── cloudwatch/
+│       ├── main.tf          CloudWatch module (log group with retention + encryption)
 │       ├── variables.tf
 │       └── outputs.tf
 └── stacks/
-    └── storing-stack/       File storage stack
+    └── storing-stack/       File storage + logging stack
         ├── main.tf
         ├── variables.tf
         ├── outputs.tf

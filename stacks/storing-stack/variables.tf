@@ -3,6 +3,17 @@ variable "bucket_name" {
   type        = string
 }
 
+variable "log_group_name" {
+  description = "Name of the CloudWatch log group to create"
+  type        = string
+}
+
+variable "log_retention_in_days" {
+  description = "Number of days to retain CloudWatch log events (0 keeps them forever)"
+  type        = number
+  default     = 30
+}
+
 variable "tags" {
   description = "External tags map merged over the computed defaults"
   type        = map(string)
