@@ -17,3 +17,18 @@ output "bucket_tags" {
   description = "All tags applied to the S3 bucket"
   value       = module.file_storage.bucket_tags
 }
+
+output "log_group_name" {
+  description = "Name of the CloudWatch log group"
+  value       = module.cloudwatch_logs.log_group_name
+}
+
+output "log_group_arn" {
+  description = "ARN of the CloudWatch log group"
+  value       = module.cloudwatch_logs.log_group_arn
+}
+
+output "log_group_tags" {
+  description = "All tags applied to the CloudWatch log group"
+  value       = module.cloudwatch_logs.log_group_tags
+}

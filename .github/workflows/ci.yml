@@ -36,6 +36,7 @@ jobs:
       matrix:
         directory:
           - modules/s3
+          - modules/cloudwatch
           - stacks/storing-stack
     defaults:
       run:
