@@ -29,3 +29,16 @@ module "cloudwatch_logs" {
   retention_in_days = var.log_retention_in_days
   tags              = local.tags
 }
+
+
+module "cognito" {
+  source = "../../modules/cognito"
+
+  user_pool_name  = var.user_pool_name
+  app_client_name = var.app_client_name
+  
+  test_user_email   = var.test_user_email
+  test_user_password = var.test_user_password
+
+  tags            = local.tags
+}
