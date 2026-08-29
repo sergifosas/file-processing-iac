@@ -61,3 +61,28 @@ variable "versioning_enabled" {
   type        = bool
   default     = true
 }
+
+variable "app_client_name" {
+  description = "Name of the Cognito app client to create"
+  type        = string
+  default     = "file-processing-api"
+}
+
+variable "user_pool_name" {
+  description = "Name of the Cognito user pool to create"
+  type        = string
+  default     = "file-processing-users"
+}
+
+variable "test_user_email" {
+  description = "Email of the test user to create in the Cognito user pool"
+  type        = string
+  default     = ""
+}
+
+variable "test_user_password" {
+  description = "Password of the test user to create in the Cognito user pool"
+  type        = string
+  default     = ""
+}
+

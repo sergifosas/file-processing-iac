@@ -32,3 +32,19 @@ output "log_group_tags" {
   description = "All tags applied to the CloudWatch log group"
   value       = module.cloudwatch_logs.log_group_tags
 }
+
+output "cognito_user_pool_id" {
+  value = module.cognito.user_pool_id
+}
+
+output "cognito_user_pool_arn" {
+  value = module.cognito.user_pool_arn
+}
+
+output "cognito_user_pool_endpoint" {
+  value = module.cognito.user_pool_endpoint
+}
+
+output "cognito_app_client_id" {
+  value = module.cognito.app_client_id
+}

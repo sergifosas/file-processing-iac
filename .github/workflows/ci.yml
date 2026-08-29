@@ -37,6 +37,7 @@ jobs:
         directory:
           - modules/s3
           - modules/cloudwatch
+          - modules/cognito
           - stacks/storing-stack
     defaults:
       run:
